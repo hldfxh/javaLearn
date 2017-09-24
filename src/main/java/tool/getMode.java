@@ -8,9 +8,12 @@ import java.util.Scanner;
 public class getMode {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        Long uid = in.nextLong();
-        long a = (uid.longValue()>>23)%16;
-        System.out.printf(""+a);
+        while (true) {
+            Scanner in = new Scanner(System.in);
+            Long uid = in.nextLong();
+            long a = (uid.longValue()>>23)%16;
+            System.out.println(""+a);
+        }
+
     }
 }

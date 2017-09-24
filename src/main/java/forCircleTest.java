@@ -11,7 +11,7 @@ public class forCircleTest {
 
         int amount = 800 * 10000;
 
-        List<Integer> scores = new ArrayList<>(amount);//RandomAccess
+        List<Integer> scores = new ArrayList<Integer>(amount);//RandomAccess
 
         for (int i = 0; i < amount; i++) {
             scores.add(new Random().nextInt(100));
