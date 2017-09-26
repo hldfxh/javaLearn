@@ -1,24 +1,26 @@
+package test;
+
+import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 /**
  * Created by fanxuehui on 2017/7/21.
  */
-public class forCircle2Test {
+public class forCircleTest {
     public static void main(String[] args) {
 
         int amount = 800 * 10000;
 
-        List<Integer> scores = new LinkedList<>();//双向链表
+        List<Integer> scores = new ArrayList<Integer>(amount);//RandomAccess
 
         for (int i = 0; i < amount; i++) {
             scores.add(new Random().nextInt(100));
         }
 
         long start = System.currentTimeMillis();
-        System.out.println("平均分："+average(scores,2));
+        System.out.println("平均分："+average(scores,1));
         long end1 = System.currentTimeMillis();
         System.out.println("耗时："+ (end1-start) + "ms");
 

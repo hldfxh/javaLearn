@@ -1,3 +1,5 @@
+package test;
+
 import com.sun.corba.se.impl.orbutil.ObjectWriter;
 
 import javax.sound.midi.Soundbank;
