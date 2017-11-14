@@ -13,6 +13,8 @@
 
    <properties>
       <java.version>1.8</java.version>
+      <logback.version>1.1.7</logback.version>
+      <logback-ext-spring.version>0.1.4</logback-ext-spring.version>
    </properties>
 
    <dependencies>
@@ -31,6 +33,43 @@
          <artifactId>shiro-core</artifactId>
          <version>1.4.0</version>
       </dependency>
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring -->
+      <dependency>
+         <groupId>org.springframework</groupId>
+         <artifactId>spring</artifactId>
+         <version>2.5.6</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-log4j12</artifactId>
+         <version>1.7.25</version>
+         <!--<scope>TestClass</scope>-->
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+      <dependency>
+         <groupId>com.alibaba</groupId>
+         <artifactId>fastjson</artifactId>
+         <version>1.2.7</version>
+      </dependency>
+
+ <!--     <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-nop</artifactId>
+         <version>1.7.6</version>
+         <scope>TestClass</scope>
+      </dependency>-->
+
+      <dependency>
+         <groupId>ch.qos.logback</groupId>
+         <artifactId>logback-core</artifactId>
+         <version>${logback.version}</version>
+      </dependency>
+<!--      <dependency>
+         <groupId>ch.qos.logback</groupId>
+         <artifactId>logback-classic</artifactId>
+         <version>${logback.version}</version>
+      </dependency>-->
    </dependencies>
 
    <plugin>
